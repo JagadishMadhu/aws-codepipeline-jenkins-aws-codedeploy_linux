@@ -6,7 +6,7 @@ require 'socket'
 
 class JenkinsSampleTest < MiniTest::Unit::TestCase
   def setup
-    @webpage = Net::HTTP.get(URI("http://#{ENV['TEST_IP_ADDRESS']}:8000/index.html"))
+    @webpage = Net::HTTP.get(URI("http://#{ENV['TEST_IP_ADDRESS']}:8081/index.html"))
   end
 
   def test_congratulations
